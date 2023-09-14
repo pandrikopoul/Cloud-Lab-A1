@@ -1,0 +1,16 @@
+# Dockerfile-ClientPython
+
+FROM python:3.7
+
+
+RUN mkdir -p /usr/src/data && \
+    touch /usr/src/data/save_file_nt 
+
+VOLUME ["/usr/src/data"]
+
+WORKDIR /usr/src/app
+
+COPY Cloud_Lab_A1.py .
+
+
+ENTRYPOINT ["python3", "Cloud_Lab_A1.py" ,"/usr/src/data/save_file_nt" ]

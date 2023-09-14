@@ -20,7 +20,7 @@ if response.status_code == 200:
     
     volume_path = "/usr/src/data/save_file_nt" #sys.argv[-1]
     with open(volume_path, "w") as file:
-        file.write(response.text)
+        file.append(response.text)
 
     print(f"Response saved to {volume_path}")
 

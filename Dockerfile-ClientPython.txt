@@ -11,6 +11,8 @@ VOLUME ["/usr/src/data"]
 
 WORKDIR /usr/src/app
 
+RUN pip install requests
+
 COPY Cloud_Lab_A1.py .
 
 

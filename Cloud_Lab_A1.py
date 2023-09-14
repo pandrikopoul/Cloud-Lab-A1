@@ -18,7 +18,7 @@ if response.status_code == 200:
     print(response.json())
 
     
-    volume_path = sys.argv[-1]
+    volume_path = "/usr/src/data/save_file_nt" #sys.argv[-1]
     with open(volume_path, "w") as file:
         file.write(response.text)
 

@@ -10,7 +10,7 @@ requests_data = {
 }
 
 
-response = requests.post("http://localhost:3000/api/notify", json=requests_data)
+response = requests.post("http://dockerservercon:3000/api/notify", json=requests_data)
 
 if response.status_code == 200:
    
